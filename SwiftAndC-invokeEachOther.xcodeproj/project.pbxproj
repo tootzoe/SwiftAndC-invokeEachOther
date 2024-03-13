@@ -11,6 +11,7 @@
 		437403B02BA18922004A6441 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437403AF2BA18922004A6441 /* ContentView.swift */; };
 		437403B22BA18924004A6441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437403B12BA18924004A6441 /* Assets.xcassets */; };
 		437403B62BA18924004A6441 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437403B52BA18924004A6441 /* Preview Assets.xcassets */; };
+		437403BF2BA18970004A6441 /* myCfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = 437403BE2BA18970004A6441 /* myCfunc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		437403B12BA18924004A6441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		437403B32BA18924004A6441 /* SwiftAndC_invokeEachOther.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftAndC_invokeEachOther.entitlements; sourceTree = "<group>"; };
 		437403B52BA18924004A6441 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		437403BC2BA18970004A6441 /* SwiftAndC-invokeEachOther-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftAndC-invokeEachOther-Bridging-Header.h"; sourceTree = "<group>"; };
+		437403BD2BA18970004A6441 /* myCfunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myCfunc.h; sourceTree = "<group>"; };
+		437403BE2BA18970004A6441 /* myCfunc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = myCfunc.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				437403AD2BA18922004A6441 /* SwiftAndC_invokeEachOtherApp.swift */,
 				437403AF2BA18922004A6441 /* ContentView.swift */,
+				437403BC2BA18970004A6441 /* SwiftAndC-invokeEachOther-Bridging-Header.h */,
+				437403C02BA18976004A6441 /* src */,
 				437403B12BA18924004A6441 /* Assets.xcassets */,
 				437403B32BA18924004A6441 /* SwiftAndC_invokeEachOther.entitlements */,
 				437403B42BA18924004A6441 /* Preview Content */,
@@ -67,6 +73,15 @@
 				437403B52BA18924004A6441 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		437403C02BA18976004A6441 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				437403BD2BA18970004A6441 /* myCfunc.h */,
+				437403BE2BA18970004A6441 /* myCfunc.c */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +116,7 @@
 				TargetAttributes = {
 					437403A92BA18922004A6441 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -141,6 +157,7 @@
 			files = (
 				437403B02BA18922004A6441 /* ContentView.swift in Sources */,
 				437403AE2BA18922004A6441 /* SwiftAndC_invokeEachOtherApp.swift in Sources */,
+				437403BF2BA18970004A6441 /* myCfunc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "SwiftAndC-invokeEachOther/SwiftAndC_invokeEachOther.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -294,6 +312,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAndC-invokeEachOther/SwiftAndC-invokeEachOther-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "SwiftAndC-invokeEachOther/SwiftAndC_invokeEachOther.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -332,6 +353,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftAndC-invokeEachOther/SwiftAndC-invokeEachOther-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
